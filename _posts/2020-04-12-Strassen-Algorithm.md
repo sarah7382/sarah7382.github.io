@@ -27,11 +27,11 @@ author: sowon
 
 #### 기본 행렬곱셈은
 
-![](C:\Users\leeso\Documents\카카오톡 받은 파일\기본행렬곱.jpg)
+![](C:\Users\leeso\my-awesome-site\assets\images\기본행렬곱.jpg)
 
 #### 슈트라센 알고리즘으로 구한 nxn행렬은
 
-![](C:\Users\leeso\Documents\카카오톡 받은 파일\슈트라.jpg)
+![](C:\Users\leeso\my-awesome-site\assets\images\슈트라.jpg)
 
 #### 이렇게 나타낼 수 있다.
 
