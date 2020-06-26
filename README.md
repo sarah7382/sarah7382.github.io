@@ -38,18 +38,14 @@ public class com {
     public static int[] selection( int[] a, int[] b, int[] x, int[] y) {
         int sum = 0;
         int[] f = new int[a.length];
-
         for(int i=0; i<a.length; i++) {
             f[i] = MSE(a[i], b[i], x, y);
             sum += f[i];
         }
-
         for (int i = 0 ; i < f.length ; i++) {
             f[i] = sum - f[i];
         }
-
         sum = 0;
-
         for (int i = 0 ; i < f.length ; i++) {
             sum += f[i];
         }
@@ -124,22 +120,21 @@ public class com {
             System.out.println(y[i]);
         }
 
-        int result_a = 0;
-        int result_b = 0;
+        int resultA = 0;
+        int resultB = 0;
 
         for(int i=0; i<1000; i++) {
             int[] sx = selection(a, b, x, y);
             String[] cx = crossOver(sx);
             int[] mx = mutation(cx);
-
             int[] f = new int[a.length];
             int min = 9999;
             for(int j = 0; j <a.length; j++) {
                 f[j] = MSE(a[j], b[j], x, y);
                 if (min > f[j]) {
                     min = f[j];
-                    result_a = a[j];
-                    result_b = b[j];
+                    resultA = a[j];
+                    resultB = b[j];
                 }
                 System.out.printf("%d ", f[j]);
             }
@@ -147,7 +142,7 @@ public class com {
             System.out.println();
             System.out.println(min);
         }
-        System.out.println("y = " + result_a + "x + " + result_b);
+        System.out.println("y = " + resultA + "x + " + resultB);
     }
 }
 
